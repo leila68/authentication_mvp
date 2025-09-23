@@ -79,7 +79,7 @@ Create a new Postman environment with these variables:
 
 ### Core Test Scenarios
 
-#### 1. Health Check ✅
+#### 1. Health Check 
 ```http
 GET {{base_url}}/health
 ```
@@ -91,7 +91,7 @@ GET {{base_url}}/health
 }
 ```
 
-#### 2. User Registration 👤
+#### 2. User Registration 
 ```http
 POST {{base_url}}/auth/register
 Content-Type: application/json
@@ -108,7 +108,7 @@ Content-Type: application/json
 
 **Expected Response:** User object without password field
 
-#### 3. User Login 🔐
+#### 3. User Login 
 ```http
 POST {{base_url}}/auth/token
 Content-Type: application/x-www-form-urlencoded
@@ -232,5 +232,3 @@ Authorization: Bearer {{patient_token}}
 | **Staff** | View/edit own profile, limited admin functions (when implemented) |
 | **Admin** | Full access to all users and system functions |
 
-
-**Built with ❤️ for Bright Health's AI Integration Platform**
